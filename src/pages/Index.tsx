@@ -24,8 +24,10 @@ const Index = () => {
   const showCompetitive = () => setCurrentView('competitive');
   const showHome = () => setCurrentView('home');
 
+  console.log('Index component rendering, currentView:', currentView);
+  
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background" style={{ backgroundColor: 'hsl(240 10% 3.9%)', color: 'hsl(0 0% 98%)' }}>
       {/* Navigation */}
       {currentView !== 'results' && (
         <nav className="container mx-auto px-4 py-6">
